@@ -1,15 +1,17 @@
 #include "ZombieEvent.hpp"
 
-int		main() {
-	Zombie *first;
-	Zombie *second;
-	ZombieEvent brainalert;
+//program that makes zombies and zombievents
 
-	first = brainalert.newZombie("Barbrah");
-	first->announce();
-	delete first;
-	brainalert.setZombieType("clicker");
-	second = brainalert.randomChump();
-	delete second;
-	return (0);
+int		main() {
+	Zombie *first; //initialize zombies
+	Zombie *second;
+	ZombieEvent brainalert; //initialize zombie event
+
+	first = brainalert.newZombie("Barbrah"); //creates new zombie
+	first->announce(); //have zombie announce itself
+	delete first; //free zombie
+	brainalert.setZombieType("clicker"); //change zombie type
+	second = brainalert.randomChump(); //create random zombie
+	delete second; //free zombie
+	return (0); //end program
 }
