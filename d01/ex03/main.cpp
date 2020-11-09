@@ -1,8 +1,10 @@
 #include "ZombieHorde.hpp"
 
-int		main() {
-	ZombieHorde	horde{4};
+//program that creates a horde of zombies and and announces them at once
 
-	horde.announce();
-	return (0);
+int		main() {
+	ZombieHorde	horde{4}; //declare ZombieHorde
+
+	horde.announce(); //have horde announce themselves
+	return (0); //end program
 }
